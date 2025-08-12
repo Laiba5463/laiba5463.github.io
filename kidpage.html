@@ -33,6 +33,7 @@
         width: 250px;
         transition: transform 0.2s;
         overflow: hidden;
+        cursor: pointer;
     }
     .card img {
         width: 100%;
@@ -52,32 +53,13 @@
         transform: scale(1.05);
     }
     footer {
-        background-color: purple
+        background-color: purple;
         text-align: center;
         padding: 10px;
         color: white;
         margin-top: 20px;
     }
 </style>
-    <script>
-    // Map each card ID to its YouTube link
-    const cartoonLinks = {
-        spongebob: "https://www.youtube.com/@SpongeBobOfficial",
-        dora: "https://www.youtube.com/@DoraOfficial",
-        tomjerry: "https://www.youtube.com/@wbkids",
-        peppa: "https://www.youtube.com/@PeppaPigOfficial",
-        pokemon: "https://www.youtube.com/c/Pok%C3%A9monAsiaENG",
-        gumball: "https://www.youtube.com/@WorldOfGumballofficial"
-    };
-
-    // Add click event to each card
-    for (let id in cartoonLinks) {
-        document.getElementById(id).addEventListener("click", function() {
-            window.open(cartoonLinks[id], "_blank");
-        });
-    }
-</script>
-
 </head>
 <body>
 
@@ -122,8 +104,33 @@
     © 2025 FunTime Cartoons | Made with ❤️ for Kids
 </footer>
 
-</body>
+<script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Map each card ID to its YouTube link
+        const cartoonLinks = {
+            spongebob: "https://www.youtube.com/@SpongeBobOfficial",
+            dora: "https://www.youtube.com/@DoraOfficial",
+            tomjerry: "https://www.youtube.com/@wbkids",
+            peppa: "https://www.youtube.com/@PeppaPigOfficial",
+            pokemon: "https://www.youtube.com/c/Pok%C3%A9monAsiaENG",
+            gumball: "https://www.youtube.com/@WorldOfGumballofficial"
+        };
 
+        // Add click event to each card
+        for (let id in cartoonLinks) {
+            const card = document.getElementById(id);
+            if (card) {
+                card.addEventListener("click", function() {
+                    window.open(cartoonLinks[id], "_blank");
+                });
+            }
+        }
+    });
+</script>
+
+</body>
 </html>
+
 
 
