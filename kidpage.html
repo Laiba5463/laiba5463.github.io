@@ -1,137 +1,132 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Top Kids Cartoons</title>
-<style>
-    body {
-        font-family: 'Comic Sans MS', cursive, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom right, #ffecd2, #8434e7);
-    }
-    header {
-        background-color: rgb(159, 46, 159);
-        padding: 20px;
-        text-align: center;
-        color: white;
-        font-size: 2em;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .cartoon-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    .card {
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(205, 126, 126, 0.2);
-        width: 250px;
-        transition: transform 0.2s;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    .card img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    .card h3 {
-        margin: 10px;
-        color: rgb(136, 26, 136);
-    }
-    .card p {
-        margin: 10px;
-        color: #666;
-        font-size: 0.9em;
-    }
-    .card:hover {
-        transform: scale(1.05);
-    }
-    footer {
-        background-color: purple;
-        text-align: center;
-        padding: 10px;
-        color: white;
-        margin-top: 20px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Kids Cartoons</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ffecd2, #8434e7);
+        }
+        header {
+            background-color: rgb(159, 46, 159);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .cartoon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(205, 126, 126, 0.2);
+            width: 250px;
+            transition: transform 0.2s;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            margin: 10px;
+            color: rgb(136, 26, 136);
+        }
+        .card p {
+            margin: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: purple;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        🎬 Top Kids' Cartoons to Watch! 🎉
+    </header>
 
-<header>
-    🎬 Top Kids' Cartoons to Watch! 🎉
-</header>
+    <div class="cartoon-container">
+        <div class="card" id="spongebob">
+            <img src="pictures/R.png" alt="SpongeBob">
+            <h3>SpongeBob SquarePants</h3>
+            <p>Follow SpongeBob's funny underwater adventures in Bikini Bottom!</p>
+        </div>
+        <div class="card" id="dora">
+            <img src="pictures/dora.jpg" alt="Dora">
+            <h3>Dora the Explorer</h3>
+            <p>Join Dora and Boots on exciting learning adventures!</p>
+        </div>
+        <div class="card" id="tomjerry">
+            <img src="pictures/tom%20and%20jerry.png" alt="Tom and Jerry">
+            <h3>Tom and Jerry</h3>
+            <p>Enjoy the classic cat-and-mouse chase full of fun and mischief!</p>
+        </div>
+        <div class="card" id="peppa">
+            <img src="pictures/oop.jpg" alt="Peppa Pig">
+            <h3>Peppa Pig</h3>
+            <p>Peppa and her friends explore the world in fun little adventures!</p>
+        </div>
+        <div class="card" id="pokemon">
+            <img src="pictures/pokemon.jpg" alt="Pokemon">
+            <h3>Pokémon</h3>
+            <p>Catch 'em all with Ash, Pikachu, and friends!</p>
+        </div>
+        <div class="card" id="gumball">
+            <img src="pictures/OIP.webp" alt="Gumball">
+            <h3>The Amazing World of Gumball</h3>
+            <p>Follow Gumball and Darwin's hilarious adventures in Elmore!</p>
+        </div>
+    </div>
 
-<div class="cartoon-container">
-    <div class="card" id="spongebob">
-        <img src="pictures/R.png" alt="SpongeBob">
-        <h3>SpongeBob SquarePants</h3>
-        <p>Follow SpongeBob's funny underwater adventures in Bikini Bottom!</p>
-    </div>
-    <div class="card" id="dora">
-        <img src="pictures/dora.jpg" alt="Dora">
-        <h3>Dora the Explorer</h3>
-        <p>Join Dora and Boots on exciting learning adventures!</p>
-    </div>
-    <div class="card" id="tomjerry">
-        <img src="pictures/tom%20and%20jerry.png" alt="Tom and Jerry">
-        <h3>Tom and Jerry</h3>
-        <p>Enjoy the classic cat-and-mouse chase full of fun and mischief!</p>
-    </div>
-    <div class="card" id="peppa">
-        <img src="pictures/oop.jpg" alt="Peppa Pig">
-        <h3>Peppa Pig</h3>
-        <p>Peppa and her friends explore the world in fun little adventures!</p>
-    </div>
-    <div class="card" id="pokemon">
-        <img src="pictures/pokemon.jpg" alt="Pokemon">
-        <h3>Pokémon</h3>
-        <p>Catch 'em all with Ash, Pikachu, and friends!</p>
-    </div>
-    <div class="card" id="gumball">
-        <img src="pictures/OIP.webp" alt="Gumball">
-        <h3>The Amazing World of Gumball</h3>
-        <p>Follow Gumball and Darwin's hilarious adventures in Elmore!</p>
-    </div>
-</div>
+    <footer>
+        © 2025 FunTime Cartoons | Made with ❤️ for Kids
+    </footer>
 
-<footer>
-    © 2025 FunTime Cartoons | Made with ❤️ for Kids
-</footer>
-
-<script>
-    // Wait for DOM to be fully loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        // Map each card ID to its YouTube link
-        const cartoonLinks = {
-            spongebob: "https://www.youtube.com/@SpongeBobOfficial",
-            dora: "https://www.youtube.com/@DoraOfficial",
-            tomjerry: "https://www.youtube.com/@wbkids",
-            peppa: "https://www.youtube.com/@PeppaPigOfficial",
-            pokemon: "https://www.youtube.com/c/Pok%C3%A9monAsiaENG",
-            gumball: "https://www.youtube.com/@WorldOfGumballofficial"
-        };
-
-        // Add click event to each card
-        for (let id in cartoonLinks) {
-            const card = document.getElementById(id);
-            if (card) {
-                card.addEventListener("click", function() {
-                    window.open(cartoonLinks[id], "_blank");
-                });
+    <script>
+        // Simple click handler that doesn't rely on DOMContentLoaded
+        document.addEventListener('click', function(event) {
+            const card = event.target.closest('.card');
+            if (!card) return;
+            
+            const links = {
+                spongebob: "https://www.youtube.com/@SpongeBobOfficial",
+                dora: "https://www.youtube.com/@DoraOfficial",
+                tomjerry: "https://www.youtube.com/@wbkids",
+                peppa: "https://www.youtube.com/@PeppaPigOfficial",
+                pokemon: "https://www.youtube.com/c/Pok%C3%A9monAsiaENG",
+                gumball: "https://www.youtube.com/@WorldOfGumballofficial"
+            };
+            
+            const id = card.id;
+            if (links[id]) {
+                window.open(links[id], "_blank");
             }
-        }
-    });
-</script>
-
+        });
+    </script>
 </body>
 </html>
+
 
 
 
