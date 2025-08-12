@@ -59,6 +59,25 @@
         margin-top: 20px;
     }
 </style>
+    <script>
+    // Map each card ID to its YouTube link
+    const cartoonLinks = {
+        spongebob: "https://www.youtube.com/@SpongeBobOfficial",
+        dora: "https://www.youtube.com/@DoraOfficial",
+        tomjerry: "https://www.youtube.com/@wbkids",
+        peppa: "https://www.youtube.com/@PeppaPigOfficial",
+        pokemon: "https://www.youtube.com/c/Pok%C3%A9monAsiaENG",
+        gumball: "https://www.youtube.com/@WorldOfGumballofficial"
+    };
+
+    // Add click event to each card
+    for (let id in cartoonLinks) {
+        document.getElementById(id).addEventListener("click", function() {
+            window.open(cartoonLinks[id], "_blank");
+        });
+    }
+</script>
+
 </head>
 <body>
 
@@ -67,32 +86,32 @@
 </header>
 
 <div class="cartoon-container">
-    <div class="card">
+    <div class="card" id="spongebob">
         <img src="pictures/R.png" alt="SpongeBob">
         <h3>SpongeBob SquarePants</h3>
         <p>Follow SpongeBob's funny underwater adventures in Bikini Bottom!</p>
     </div>
-    <div class="card">
+    <div class="card" id="dora">
         <img src="pictures/dora.jpg" alt="Dora">
         <h3>Dora the Explorer</h3>
         <p>Join Dora and Boots on exciting learning adventures!</p>
     </div>
-    <div class="card">
+    <div class="card" id="tomjerry">
         <img src="pictures/tom%20and%20jerry.png" alt="Tom and Jerry">
         <h3>Tom and Jerry</h3>
         <p>Enjoy the classic cat-and-mouse chase full of fun and mischief!</p>
     </div>
-    <div class="card">
+    <div class="card" id="peppa">
         <img src="pictures/oop.jpg" alt="Peppa Pig">
         <h3>Peppa Pig</h3>
         <p>Peppa and her friends explore the world in fun little adventures!</p>
     </div>
-    <div class="card">
+    <div class="card" id="pokemon">
         <img src="pictures/pokemon.jpg" alt="Pokemon">
         <h3>Pokémon</h3>
         <p>Catch 'em all with Ash, Pikachu, and friends!</p>
     </div>
-    <div class="card">
+    <div class="card" id="gumball">
         <img src="pictures/OIP.webp" alt="Gumball">
         <h3>The Amazing World of Gumball</h3>
         <p>Follow Gumball and Darwin's hilarious adventures in Elmore!</p>
@@ -106,4 +125,5 @@
 </body>
 
 </html>
+
 
